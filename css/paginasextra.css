@@ -1,0 +1,59 @@
+ 
+ #contenedor {
+  max-width: 1200px; /*ANcho contenedor*/
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: auto; /*Alto*/
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para la imagen */
+.imagen {
+  float: left;
+  margin-right: 5px;
+  width: 100%; /* Cambiar el ancho a 100% */
+  display: block;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor del texto */
+.class {
+  overflow: hidden;
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Estilos para el título del curso */
+.class h3 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-right: 50px; /* Ajustar el margen derecho para separar del texto */
+}
+
+/* Estilos para la descripción del curso */
+.class p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .imagen {
+    margin-top: 20px; /* Ajustar el margen superior */
+  }
+  .class {
+    flex-direction: column;
+    align-items: center;
+  }
+  .class h3 {
+    margin-right: 0; /* Eliminar el margen derecho */
+    text-align: center; /* Alinear el texto al centro */
+  }
+}
