@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/paginasextra.css">
-    <link rel="stylesheet" href="css/temario.css">
+    
+    
 </head>
 <body>
 <header id="header" class="header">
@@ -75,21 +76,20 @@
         
       </div>
        <!--****************-->
-       
-        <h3 id="encabezado" class="encabezado">Detalles</h3>
+       <div class="container">
+        <h3 id="encabezado" class="encabezado">Contenido</h3>
       
-        
-          <div class="temario">
-          <select id="temarioSelect" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <div id="contenedor">
+
           <div class="class" style="display: flex; flex-direction: column;">
             <select id="temarioSelect">
-              <option value="">Contenido</option>
-              <option value="semana1-2">Semana 1-2: Introducción a la programación</option>
-              <option value="semana3-4">Semana 3-4: Programación orientada a objetos</option>
-              <option value="semana5-6">Semana 5-6: Desarrollo web básico</option>
-              <option value="semana7-8">Semana 7-8: Introducción a la lógica de algoritmos</option>
-              <option value="semana9-10">Semana 9-10: Introducción a la programación de juegos</option>
-              <option value="semana11-12">Semana 11-12: Proyecto final</option>
+              <option value="">Contenido en Semanas</option>
+              <option value="semana1-2">Introducción a la programación</option>
+              <option value="semana3-4">Programación orientada a objetos</option>
+              <option value="semana5-6">Desarrollo web básico</option>
+              <option value="semana7-8">Introducción a la lógica de algoritmos</option>
+              <option value="semana9-10">Introducción a la programación de juegos</option>
+              <option value="semana11-12">Proyecto final</option>
             </select>
             
             <div id="temarioContent">
@@ -178,10 +178,49 @@
             
             
             </p>
-               
-                
-            
+                 
           </div>
+          <style>
+            /* Estilos del temario */
+            #temarioContent > div:not(:first-child) {
+              display: none;
+            }
+          
+            /* Estilos para el select */
+            select {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              font-size: 16px;
+            }
+          
+            /* Estilos para la sección de contenido */
+            h3 {
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+          
+            ul {
+              list-style-type: disc;
+              margin-left: 20px;
+            }
+          </style>
+          
+          <script>
+            document.getElementById('temarioSelect').addEventListener('change', function() {
+              var selectedWeek = this.value;
+              var temarioContent = document.getElementById('temarioContent').children;
+          
+              for (var i = 0; i < temarioContent.length; i++) {
+                temarioContent[i].style.display = 'none';
+              }
+          
+              if (selectedWeek) {
+                document.getElementById(selectedWeek).style.display = 'block';
+              }
+              </script>
+          
         </div>
         
       </div>
