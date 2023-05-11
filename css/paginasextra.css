@@ -61,4 +61,38 @@
     font-size: 36px;
 
   }
+
+  .temario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .temario h3 {
+    text-align: center;
+  }
+  
+  .temario ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .temario li {
+    padding: 5px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .temario {
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .temario {
+      max-width: 300px;
+    }
+  }
+  
 }
