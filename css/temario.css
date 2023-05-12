@@ -41,3 +41,46 @@
     list-style-type: disc;
     margin-left: 20px;
   }
+
+  /*scroll arriba*/
+  .scroll-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 9999;
+  }
+  .scroll-icons a {
+    margin-left: 10px; /* Espacio entre los íconos */
+    color: black; /* Color de los íconos */
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  /*     */
+
+  .discount {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .discount-bg {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .discount-pr {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  /*icono casita*/
+  
+
+ 
