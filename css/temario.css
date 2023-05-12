@@ -1,0 +1,43 @@
+/*precios tarjetas*/
+.cardt {
+    background-color: #33C3F0 ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardt h3 {
+    margin-top: 0;
+  }
+  
+  .cardt p {
+    margin-bottom: 8px;
+  }
+
+
+  /*temarioa*/
+  #temarioContent > div:not(:first-child) {
+    display: none;
+  }
+
+  /* Estilos para el select */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  /* Estilos para la sección de contenido */
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
